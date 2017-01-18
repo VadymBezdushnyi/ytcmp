@@ -1,0 +1,75 @@
+body{
+	font-family:'rooney-sans', sans-serif,"Lato", "Lucida Grande","Lucida Sans Unicode", Tahoma;
+	font-family: monospace, monospace;
+	background-color:rgb(0,0,0);
+}
+
+#content{
+	width:100%;
+}
+
+@keyframes win{
+    0%   {top:-100px;}
+    25%  {top:150px;}
+    75%  {top:150px}
+    100% {top:-100px;}
+}
+#win-block{
+    top: -100px;
+    position: absolute;
+    background-color: darkgoldenrod;
+    z-index: 10000;
+    margin:auto;
+    width: 200px;
+    height: 100px;
+}
+#content,#left,#right{
+
+	overflow:hidden;
+	min-height:400px;
+	max-height:1000px;
+}
+
+
+#video1:hover,#video2:hover{
+	position:relative;
+	z-index:10;
+    transition: 0.4s;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+}
+#video1, #video2{
+	position:relative;
+	z-index:1;
+    transition: 0.4s;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+	width: 100%;
+	float: left
+}
+
+#left,#right{
+	float:left;
+	width:50%;
+}
+
+nav{
+	position:relative;
+	z-index:1000;
+	width:100%;
+	height:40px;
+	background-color:rgb(40,40,40);
+}
+
+nav>a{
+	color:#ffffff;
+	font-size:18px;
+	padding:5px 10px;
+	line-height:40px;
+}
